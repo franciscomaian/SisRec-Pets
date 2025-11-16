@@ -1,0 +1,12 @@
+nome;sexo;cores;idade;vacinado;sociavel;animado;castrado;porte;adocao_especial
+Peter;0;["preto"];36;1;1;1;1;pequeno/médio;1
+Denis;0;["caramelo"];11;1;1;1;1;médio;0
+Universitária;1;["preto"];16;1;1;1;1;médio;0
+Cleo;1;["laranja","preto"];120;1;1;0;1;médio;1
+Catarina;1;["caramelo"];18;1;1;0;1;pequeno;1
+Júlia;1;["preto"];12;1;1;0;1;grande;0
+Seu Madruga;0;["preto","caramelo"];3;0;1;1;0;indefinido;0
+Chaves;0;["preto","caramelo"];3;0;1;1;0;indefinido;0
+Kiko;0;["preto","caramelo"];3;0;1;1;0;indefinido;0
+Julie;1;["bege"];24;0;1;1;0;pequeno;1
+Boris;0;["bege","preto"];72;0;1;0;0;médio/grande;1
