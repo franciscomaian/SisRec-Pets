@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/modal.css">
 
     <title>Santuário Luz dos Bichos</title>
 </head>
@@ -19,7 +20,7 @@
             <h2 class="section-title">Adote um Animal</h2>
 
             <div id="animais">
-                <div class="animal">
+                <div class="animal" id="abrir-modal">
                     <img src="src/images/milu.png" class="animal-img" alt="">
                     <h3 class="animal-title">Milu</h3>
                 </div>
@@ -48,11 +49,17 @@
                     <img src="src/images/milu.png" class="animal-img" alt="">
                     <h3 class="animal-title">Milu</h3>
                 </div>
-                
-
-
-                
             </div>
+
+            <div class="modal" id="modal-info">
+                <div class="conteudo-modal">
+                    <div id="modal-img"><img src="src/images/milu.png" class="animal-img" alt=""></div>
+                    <div id="modal-text">Texto</div>
+
+                    <span id="fechar-modal">&times;</span>
+                </div>
+            </div>
+
         </section>
 
     </main>
