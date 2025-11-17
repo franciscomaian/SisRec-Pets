@@ -25,7 +25,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 24px;
     margin-top: 32px;
 }
 
@@ -38,10 +38,44 @@ section {
     width: 25%;
     padding: 20px;
     background-color: #eeeeee;
+    position: relative;
 }
 
 .animal-img {
   max-width: 100%; 
   height: auto;
   border-radius: 10px;
+}
+
+@media screen {
+    #animais {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .animal {
+        width: calc(25% - 58px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #animais {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .animal {
+        width: calc(50% - 52px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #animais {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .animal {
+        width: 100%;
+    }
 }
