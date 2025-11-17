@@ -3,10 +3,30 @@
 * {
   font-family: "M PLUS 1", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 410;
   font-style: normal;
   margin: 0;
   padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #ffedcd;
+    display: flex;
+    padding: 12px;
+    
+}
+
+#navbar {
+    font-size: 26px;
+    width: 100%;
+    display: flex;
+    margin-left: 5px;
+}
+
+.img-logo {
+    width: 32px;
+    margin-left: 15%;
 }
 
 section {
@@ -37,7 +57,7 @@ section {
     gap: 18px;
     width: 25%;
     padding: 20px;
-    background-color: #eeeeee;
+    background-color: #ffedcd;
     position: relative;
 }
 
