@@ -9,6 +9,13 @@
   padding: 0;
 }
 
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
     width: 100%;
     background-color: #ffedcd;
@@ -32,6 +39,36 @@ header {
 section {
     padding: 28px 8%;
 }
+
+#filtro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+
+    input, select {
+        padding: 5px;
+        width: 200px;
+    }
+}
+
+.botao-busca {
+    margin-top: 20px;
+    padding: 6px;
+    background-color: #ffedcd;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.input-box {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 
 #home {
     display: flex;
