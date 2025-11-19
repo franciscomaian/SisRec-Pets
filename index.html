@@ -3,136 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/modal.css">
 
+    <link rel="icon" type="image/png" href="src/images/logo.png">
+
     <title>Santuário Luz dos Bichos</title>
+
+    <style>
+        .cor-option {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .cor-bolinha {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 1px solid #555;
+        }
+
+        .cor-checkbox {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
         <img src="src/images/logo.png" alt="" class="img-logo">
         <nav id="navbar">Santuário Luz dos Bichos</nav>
     </header>
 
     <main id="content">
+
         <h2 class="section-title">Adote um Animal</h2>
+
         <section id="filtro">
-            <div id="tipo" class="input-box">
+
+            <!-- TIPO -->
+            <div class="input-box">
                 Animal:
-                <select>
-                    <option value="item1">-</option>
-                    <option value="item2">Gato</option>
-                    <option value="item2">Cachorro</option>
+                <select id="tipo_pet">
+                    <option value="">-</option>
+                    <option value="gato">Gato</option>
+                    <option value="cachorro">Cachorro</option>
                 </select>
             </div>
 
-            <div id="cor" class="input-box">
+            <!-- CORES -->
+            <div class="input-box">
                 Cor:
-                <select>
-                    <option value="item1">-</option>
-                    <option value="item2">Preto</option>
-                    <option value="item2">Branco</option>
-                    <option value="item2">Laranja</option>
-                    <option value="item2">Cinza</option>
-                </select>
+                <div id="cores-container">
+                    <label class="cor-option">
+                        <input type="checkbox" class="cor-checkbox" value="preto">
+                        <span class="cor-bolinha" style="background:black;"></span> Preto
+                    </label>
+
+                    <label class="cor-option">
+                        <input type="checkbox" class="cor-checkbox" value="branco">
+                        <span class="cor-bolinha" style="background:white;"></span> Branco
+                    </label>
+
+                    <label class="cor-option">
+                        <input type="checkbox" class="cor-checkbox" value="laranja">
+                        <span class="cor-bolinha" style="background:orange;"></span> Laranja
+                    </label>
+
+                    <label class="cor-option">
+                        <input type="checkbox" class="cor-checkbox" value="cinza">
+                        <span class="cor-bolinha" style="background:gray;"></span> Cinza
+                    </label>
+                </div>
             </div>
 
-            <div id="sexo" class="input-box">
+            <!-- SEXO -->
+            <div class="input-box">
                 Sexo:
-                <select>
-                    <option value="item1">-</option>
-                    <option value="item2">Macho</option>
-                    <option value="item2">Fêmea</option>
+                <select id="sexo">
+                    <option value="">-</option>
+                    <option value="0">Macho</option>
+                    <option value="1">Fêmea</option>
                 </select>
             </div>
 
-            <div id="idade" class="input-box">
-                Idade (Meses):
-                <input type="number">
+            <!-- IDADE -->
+            <div class="input-box">
+                Idade:
+                <select id="idade">
+                    <option value="">-</option>
+                    <option value="filhote">Filhote</option>
+                    <option value="adulto">Adulto</option>
+                </select>
             </div>
 
-            <div id="vacinado" class="input-box">
+            <!-- BOOLEANOS -->
+            <div class="input-box">
                 Vacinado:
-                <select>
-                    <option value="item1">-</option>
-                    <option value="item2">Sim</option>
-                    <option value="item2">Não</option>
+                <select id="vacinado">
+                    <option value="">-</option>
+                    <option value="true">Sim</option>
+                    <option value="false">Não</option>
                 </select>
             </div>
 
-            <div id="socialvel" class="input-box">
+            <div class="input-box">
                 Sociável:
-                 <select>
-                    <option value="item1">-</option>
-                    <option value="item2">Sim</option>
-                    <option value="item2">Não</option>
+                <select id="sociavel">
+                    <option value="">-</option>
+                    <option value="true">Sim</option>
+                    <option value="false">Não</option>
                 </select>
             </div>
 
-            <div id="animado" class="input-box">
+            <div class="input-box">
                 Animado:
-                 <select>
-                    <option value="item1">-</option>
-                    <option value="item2">Sim</option>
-                    <option value="item2">Não</option>
+                <select id="animado">
+                    <option value="">-</option>
+                    <option value="true">Sim</option>
+                    <option value="false">Não</option>
                 </select>
             </div>
 
-            <div id="castrado" class="input-box">
+            <div class="input-box">
                 Castrado:
-                 <select>
-                    <option value="item1">-</option>
-                    <option value="item2">Sim</option>
-                    <option value="item2">Não</option>
+                <select id="castrado">
+                    <option value="">-</option>
+                    <option value="true">Sim</option>
+                    <option value="false">Não</option>
                 </select>
             </div>
 
-            <button class="botao-busca" id="busca">Buscar</button>
-        </section>
-
-        <section id="home">
-            <div id="animais">
-                <div class="animal" id="abrir-modal">
-                    <img src="src/images/milu.png" class="animal-img" alt="">
-                    <h3 class="animal-title">Milu</h3>
-                </div>
-
-                <div class="animal">
-                    <img src="src/images/milu.png" class="animal-img" alt="">
-                    <h3 class="animal-title">Milu</h3>
-                </div>
-
-                <div class="animal">
-                    <img src="src/images/milu.png" class="animal-img" alt="">
-                    <h3 class="animal-title">Milu</h3>
-                </div>
-
-                <div class="animal">
-                    <img src="src/images/milu.png" class="animal-img" alt="">
-                    <h3 class="animal-title">Milu</h3>
-                </div>
-
-                <div class="animal">
-                    <img src="src/images/milu.png" class="animal-img" alt="">
-                    <h3 class="animal-title">Milu</h3>
-                </div>
-
-                <div class="animal">
-                    <img src="src/images/milu.png" class="animal-img" alt="">
-                    <h3 class="animal-title">Milu</h3>
-                </div>
+            <div class="input-box">
+                Adoção especial:
+                <select id="especial">
+                    <option value="">-</option>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
             </div>
 
-            <div class="modal" id="modal-info">
-                <div class="conteudo-modal">
-                    <div id="modal-img"><img src="src/images/milu.png" class="animal-img" alt=""></div>
-                    <div id="modal-text">Texto</div>
-
-                    <span id="fechar-modal">&times;</span>
-                </div>
+            <!-- SOMENTE GATOS -->
+            <div class="input-box" id="felv-box" style="display:none;">
+                FELV:
+                <select id="felv">
+                    <option value="">-</option>
+                    <option value="1">Positivo</option>
+                    <option value="0">Negativo</option>
+                </select>
             </div>
 
+            <!-- SOMENTE CACHORROS -->
+            <div class="input-box" id="porte-box" style="display:none;">
+                Porte:
+                <select id="porte">
+                    <option value="">-</option>
+                    <option value="0">Pequeno</option>
+                    <option value="1">Médio</option>
+                    <option value="2">Grande</option>
+                </select>
+            </div>
+
+            <button class="botao-busca" id="btn-buscar">Buscar</button>
         </section>
+
+        <!-- RECOMENDADOS -->
+        <h2 style="margin-top: 40px;">Pets recomendados</h2>
+        <div id="resultados"></div>
+
+        <!-- TALVEZ VOCÊ GOSTE (só aparece se tiver resultados) -->
+        <div id="talvez-container" style="display:none; margin-top: 50px;">
+            <h2>Talvez você possa gostar</h2>
+            <div id="resultados-talvez"></div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal" id="modal-info">
+            <div class="conteudo-modal">
+                <div id="modal-img"><img src="src/images/milu.png" class="animal-img" alt=""></div>
+                <div id="modal-text">Texto</div>
+                <span id="fechar-modal">&times;</span>
+            </div>
+        </div>
 
     </main>
 
