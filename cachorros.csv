@@ -1,12 +1,12 @@
-nome;sexo;cores;idade;vacinado;sociavel;animado;castrado;porte;adocao_especial;id
-Peter;0;"[""preto""]";36;1;1;1;1;pequeno/médio;1;dog0001
-Denis;0;"[""caramelo""]";11;1;1;1;1;médio;0;dog0002
-Universitária;1;"[""preto""]";16;1;1;1;1;médio;0;dog0003
-Cleo;1;"[""laranja"",""preto""]";120;1;1;0;1;médio;1;dog0004
-Catarina;1;"[""caramelo""]";18;1;1;0;1;pequeno;1;dog0005
-Júlia;1;"[""preto""]";12;1;1;0;1;grande;0;dog0006
-Seu Madruga;0;"[""preto"",""caramelo""]";3;0;1;1;0;indefinido;0;dog0007
-Chaves;0;"[""preto"",""caramelo""]";3;0;1;1;0;indefinido;0;dog0008
-Kiko;0;"[""preto"",""caramelo""]";3;0;1;1;0;indefinido;0;dog0009
-Julie;1;"[""bege""]";24;0;1;1;0;pequeno;1;dog0010
-Boris;0;"[""bege"",""preto""]";72;0;1;0;0;médio/grande;1;dog0011
+nome;sexo;cores;idade;vacinado;sociavel;animado;castrado;porte;adocao_especial;id;data nascimento;data_nasc_dt;faixa_etaria
+Peter;0;"[""preto""]";36;1;1;1;1;pequeno/médio;1;dog0001;11/2022;2022-11-01;adulto
+Denis;0;"[""caramelo""]";11;1;1;1;1;médio;0;dog0002;12/2024;2024-12-01;filhote
+Universitária;1;"[""preto""]";16;1;1;1;1;médio;0;dog0003;07/2024;2024-07-01;adulto
+Cleo;1;"[""laranja"",""preto""]";120;1;1;0;1;médio;1;dog0004;11/2015;2015-11-01;idoso
+Catarina;1;"[""caramelo""]";18;1;1;0;1;pequeno;1;dog0005;05/2024;2024-05-01;adulto
+Júlia;1;"[""preto""]";12;1;1;0;1;grande;0;dog0006;11/2024;2024-11-01;adulto
+Seu Madruga;0;"[""preto"",""caramelo""]";3;0;1;1;0;indefinido;0;dog0007;08/2025;2025-08-01;filhote
+Chaves;0;"[""preto"",""caramelo""]";3;0;1;1;0;indefinido;0;dog0008;08/2025;2025-08-01;filhote
+Kiko;0;"[""preto"",""caramelo""]";3;0;1;1;0;indefinido;0;dog0009;08/2025;2025-08-01;filhote
+Julie;1;"[""bege""]";24;0;1;1;0;pequeno;1;dog0010;11/2023;2023-11-01;adulto
+Boris;0;"[""bege"",""preto""]";72;0;1;0;0;médio/grande;1;dog0011;11/2019;2019-11-01;adulto
