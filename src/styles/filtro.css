@@ -1,0 +1,56 @@
+#tipo-animal {
+    input, select {
+        padding: 5px;
+        width: 200px;
+    }
+}
+
+#filtro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+
+    select {
+        padding: 5px;
+        width: 200px;
+    }
+}
+
+.botao-busca {
+    margin-top: 20px;
+    padding: 6px;
+    background-color: #ffedcd;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.input-box {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cor-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cor-bolinha {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #555;
+}
+
+.cor-checkbox {
+    transform: scale(1.2);
+    cursor: pointer;
+}

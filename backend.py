@@ -28,3 +28,34 @@ def recomendar(tipo: str, filtros: dict):
         return main("recomendar_cat", criterios=filtros)
 
     return {"status": "erro", "msg": "Tipo inválido"}
+
+@app.get("/get/{id}")
+def recomendar(id: str):
+
+    if id[0:3] == "dog":
+        return main("get_dog", {"id" : id})
+
+    if id[0:3] == "cat":
+        return main("get_cat", {"id" : id})
+
+    return {"status": "erro", "msg": "Tipo inválido"}
+
+@app.post("/remover/{id}")
+def remover(id: str):
+    if id[0:3] == "cat":
+        return main("remove_cat", {"id" : id})
+    
+    if id[0:3] == "dog":
+        return main("remove_dog", {"id" : id})
+    
+    return {"status": "erro", "msg": "Tipo inválido"}
+
+@app.post("/adicionar/")
+def adicionar(dados: dict):
+    if dados["tipo"] == "cat":
+        return main("add_cat", dados)
+    
+    if dados["tipo"] == "dog":
+        return main("add_dog", dados)
+    
+    return {"status": "erro", "msg": "Tipo inválido"}

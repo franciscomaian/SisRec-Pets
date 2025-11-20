@@ -7,7 +7,7 @@ echo ============================================
 REM --------------------------------------------
 REM 1) DEFINIR CAMINHO DO PROJETO
 REM --------------------------------------------
-set BASE_PATH=C:\Users\Gustavo\Downloads\Sisrec
+set BASE_PATH=C:\Users\Usuário\Desktop\github\SisRec-Pets
 set BACKEND_FILE=backend:app
 
 REM --------------------------------------------

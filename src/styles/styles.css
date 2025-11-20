@@ -40,36 +40,6 @@ section {
     padding: 28px 8%;
 }
 
-#filtro {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-
-    input, select {
-        padding: 5px;
-        width: 200px;
-    }
-}
-
-.botao-busca {
-    margin-top: 20px;
-    padding: 6px;
-    background-color: #ffedcd;
-    font-size: 14px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    width: 150px;
-}
-
-.input-box {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-
 #home {
     display: flex;
     flex-direction: column;
@@ -78,7 +48,7 @@ section {
     min-height: 100vh;
 }
 
-#animais {
+.animais {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -100,13 +70,13 @@ section {
 }
 
 .animal-img {
-  max-width: 100%; 
-  height: auto;
+  width: 100%; 
+  aspect-ratio: 1 / 1;
   border-radius: 10px;
 }
 
 @media screen {
-    #animais {
+    .animais {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -117,7 +87,7 @@ section {
 }
 
 @media screen and (max-width: 1200px) {
-    #animais {
+    .animais {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -128,7 +98,7 @@ section {
 }
 
 @media screen and (max-width: 900px) {
-    #animais {
+    .animais {
         flex-wrap: wrap;
         justify-content: center;
     }

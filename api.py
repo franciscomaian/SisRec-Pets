@@ -264,6 +264,9 @@ def recomendar_pets(df, criterios, tipo_pet):
 
     return df_principal, df_talvez
 
+def get(df, id):
+    return df[df["id"] == id]
+
 
 """#Main"""
 
@@ -286,6 +289,18 @@ def main(acao, dados=None, criterios=None):
 
     gatos = atualizar_dados(gatos, "gato")
     cachorros = atualizar_dados(cachorros, "cachorro")
+
+    if acao == "get_dog":
+        if "id" not in dados:
+            return {"status": "erro", "msg": "ID não informado"}
+        
+        return get(cachorros, dados["id"]).to_dict(orient="records")
+    
+    if acao == "get_cat":
+        if "id" not in dados:
+            return {"status": "erro", "msg": "ID não informado"}
+        
+        return get(gatos, dados["id"]).to_dict(orient="records")
 
     if acao == "remove_dog":
         if "id" not in dados:

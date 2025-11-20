@@ -5,10 +5,10 @@ document.getElementById("tipo_pet").addEventListener("change", () => {
     const tipo = document.getElementById("tipo_pet").value;
 
     document.getElementById("felv-box").style.display =
-        tipo === "gato" ? "block" : "none";
+        tipo === "gato" ? "grid" : "none";
 
     document.getElementById("porte-box").style.display =
-        tipo === "cachorro" ? "block" : "none";
+        tipo === "cachorro" ? "grid" : "none";
 });
 
 
@@ -121,14 +121,11 @@ function exibirAnimais(lista, containerId) {
         return;
     }
 
-    div.style.display = "grid";
-    div.style.gridTemplateColumns = "repeat(3, 1fr)";
-    div.style.gap = "20px";
-    div.style.justifyItems = "center";
+    div.className = "animais";
 
     lista.forEach(pet => {
         const card = document.createElement("div");
-        card.className = "animal-card";
+        card.className = "animal";
 
         const img = document.createElement("img");
         img.src = `src/images/${pet.id}.png`;
