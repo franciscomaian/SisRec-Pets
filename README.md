@@ -15,13 +15,13 @@ Antes de executar o programa, certifique que os seguintes softwares estão insta
 
 ### Automático
 
-1. Modifique a variável `BASE_PATH` do arquivo `rodar.bat` e excute o mesmo arquivo
+1. Modifique a variável `BASE_PATH` do arquivo `rodar.bat` para o caminho da pasta principal do projeto e excute o mesmo arquivo
 
 2. Abra no navegador o arquivo `index.html`
 
 ### Manualmente
 
-1. Execute no terminal de comandos, na pasta dos arquivos, o seguinte comando:
+1. Execute no terminal de comandos, na pasta principal do projeto, o seguinte comando:
 
     ```bash
     uvicorn backend:app
